@@ -52,12 +52,12 @@ check_logged_out();
                 </div>
 
                 <div class="form-group">
-                    <label for="username" class="sr-only">Username</label>
-                    <input type="text" id="username" name="username" class="form-control" placeholder="Username" required autofocus>
+                    <label for="username" class="sr-only">Student ID</label>
+                    <input type="text" id="id" name="id" class="form-control" placeholder="id" required autofocus>
                     <sub class="text-danger">
                         <?php
-                            if (isset($_SESSION['ERRORS']['usernameerror']))
-                                echo $_SESSION['ERRORS']['usernameerror'];
+                            if (isset($_SESSION['ERRORS']['iderror']))
+                                echo $_SESSION['ERRORS']['iderror'];
 
                         ?>
                     </sub>
